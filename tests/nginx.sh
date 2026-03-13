@@ -38,7 +38,7 @@ grep -qi "X-Frame-Options: SAMEORIGIN" /tmp/headers.txt && \
 grep -qi "X-Content-Type-Options: nosniff" /tmp/headers.txt && \
 grep -qi "X-XSS-Protection: 1; mode=block" /tmp/headers.txt && \
 grep -qi "Referrer-Policy: no-referrer-when-downgrade" /tmp/headers.txt && \
-grep -qi "Content-Security-Policy: default-src 'self';" /tmp/headers.txt
+grep -qi "Content-Security-Policy: default-src 'self'; style-src 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css; font-src 'self' https://cdnjs.cloudflare.com;" /tmp/headers.txt
 check_result $? "Security headers are present"
 
 # Server token should be EXACTLY "Server: nginx" with no version number
