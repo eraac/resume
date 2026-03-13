@@ -7,7 +7,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {{ range .educations }}
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg">
             <h4 class="font-bold text-slate-800 text-lg mb-1">{{ .institution }}</h4>
             <span class="text-sm font-semibold text-slate-500 block mb-2">{{ .period.start }} - {{ .period.end }}</span>
             <p class="text-slate-700 text-base font-medium">{{ .degree }}</p>

@@ -8,7 +8,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {{ range .open_source.contributions }}
-            <div class="bg-white border border-slate-200 p-5 rounded-xl shadow-sm">
+            <div class="bg-white border border-slate-200 p-5 rounded-xl shadow-sm hover:shadow-lg">
                 {{ $org := .organization }}
                 <h4 class="font-bold text-slate-800 text-lg mb-3">{{ .organization }}/</h4>
                 <div class="flex flex-wrap gap-2 text-sm">
