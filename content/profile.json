@@ -1,0 +1,29 @@
+{
+	"profile": {
+		"personal_information": {
+			"firstname": "Kévin",
+			"lastname": "Labesse",
+			"nationality": "French",
+			"email": "kevin [at] labesse [dot] fr",
+			"url": "https://labesse.fr",
+			"location": {
+				"city": "Paris",
+				"country": "France"
+			}
+		},
+		"languages": [
+			{ "language": "French", "fluency": "Native" },
+			{ "language": "English", "fluency": "Professional" }
+		],
+		"social_networks": [
+			{ "network": "github", "username": "@eraac", "url": "https://github.com/eraac" }
+		],
+		"interests": ["Archery (competitor)", "Workout", "Pastry"],
+		"summary": [
+			"SRE with a background from operating systems to software engineering. This knowledge allows me to deep-dive into complex technical challenges and communicate effectively across diverse teams.",
+			"I apply a data-driven approach to system optimization and decision-making, while prioritizing documentation to share and consolidate knowledge.",
+			"Active contributor to the Open Source community."
+		]
+	}
+}
+

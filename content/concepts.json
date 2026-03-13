@@ -1,0 +1,29 @@
+{
+	"concepts": [
+		"A/B Testing",
+		"ADR",
+		"Automation",
+		"Blameless Post-Mortem",
+		"Caching Strategy",
+		"Circuit Breakers",
+		"Cloud Provider",
+		"Data Processing",
+		"DRP ",
+		"Event-Driven",
+		"Exponential Backoff",
+		"Feature Flags",
+		"FinOps",
+		"GitOps",
+		"High Availability",
+		"IaC",
+		"Key-Value Database",
+		"Load Balancing",
+		"Message Queue",
+		"RESTful API",
+		"Serverless",
+		"SLO / SLI",
+		"Thundering Herd",
+		"Toil Management"
+	]
+}
+

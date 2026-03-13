@@ -1,0 +1,24 @@
+{{ define "open_source_contributions" }}
+<section class="mb-16">
+    <h3 class="text-2xl font-extrabold text-slate-800 mb-6 flex items-center gap-2 border-b-2 border-cyan-400 pb-2 inline-flex">
+        <i class="fa-brands fa-osi text-cyan-500 text-2xl"></i>
+        Open Source Contributions
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        {{ range .open_source.contributions }}
+            <div class="bg-white border border-slate-200 p-5 rounded-xl shadow-sm">
+                {{ $org := .organization }}
+                <h4 class="font-bold text-slate-800 text-lg mb-3">{{ .organization }}/</h4>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    {{ range .projects }}
+                    <a target="_blank" href="https://github.com/{{ $org }}/{{ . }}/pulls?q=is%3Apr+author%3AEraac" class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-medium">{{ . }}</a>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+
+    </div>
+</section>
+{{ end }}

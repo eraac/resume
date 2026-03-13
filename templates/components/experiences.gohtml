@@ -1,0 +1,30 @@
+{{ define "experiences" }}
+<section class="mb-16">
+    <h3 class="text-2xl font-extrabold text-slate-800 mb-10 flex items-center gap-3 border-b-2 border-emerald-400 pb-3 inline-flex">
+        <i class="fa-solid fa-briefcase text-emerald-500 text-2xl"></i>
+        Professional Experiences
+    </h3>
+
+    <div class="space-y-12">
+        {{ range .experiences }}
+            {{ template "experience" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ define "experience" }}
+<div>
+    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-3">
+        <h4 class="text-slate-800"><span class="text-xl font-bold">{{ .title }}</span> at <span class="font-bold">{{ .company }}</span></h4>
+        <span class="text-sm font-bold text-indigo-500 uppercase tracking-wider">{{ .period.start }} - {{ or .period.end "current" }}</span>
+    </div>
+
+    <ul class="list-none space-y-3 text-slate-600 text-base leading-relaxed">
+        {{ range .highlights }}
+        <li class="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-emerald-500 before:font-bold">
+            {{ . }}</li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "information" }}
+<section class="mb-8 relative z-10 space-y-6">
+    <div>
+        <h3 class="text-xs font-bold uppercase tracking-widest mb-3 text-indigo-300">
+            <i class="fa-solid fa-crown text-xs w-3 text-center mr-1"></i> Interests
+        </h3>
+        <ul class="text-sm text-slate-300 space-y-1 font-medium">
+            {{ range .profile.interests }}
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="text-xs font-bold uppercase tracking-widest mb-3 text-indigo-300">
+            <i class="fa-solid fa-comment text-xs w-3 text-center mr-1"></i> Languages
+        </h3>
+        <ul class="text-sm text-slate-300 space-y-1 font-medium">
+            {{ range .profile.languages }}
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> {{ .language }} ({{ .fluency }})</li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,49 @@
+{{- define "index" -}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {{ with .profile.personal_information }}<title>{{ .firstname }} {{ .lastname }} - SRE</title>{{ end }}
+        <link rel="canonical" href="https://labesse.fr">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="bg-slate-50 font-sans text-slate-800 antialiased flex flex-col md:flex-row min-h-screen w-full selection:bg-indigo-500 selection:text-white">
+        <aside class="w-full md:w-[30%] lg:w-[25%] xl:w-[22%] bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white p-8 md:p-10 relative shadow-2xl z-20">
+            {{ template "profile" . }}
+
+            <hr class="border-indigo-800/50 mb-8">
+
+            {{ template "skills" . }}
+
+            <hr class="border-indigo-800/50 mb-8">
+
+            {{ template "information" . }}
+        </aside>
+
+        <main class="w-full md:w-[70%] lg:w-[75%] xl:w-[78%] p-4 md:p-8 lg:p-12 relative overflow-hidden">
+            <div class="max-w-5xl mx-auto">
+                <section class="mb-16 space-y-3">
+                    {{ range .profile.summary }}
+                        <p class="text-lg text-slate-700 leading-relaxed font-medium">{{ . }}</p>
+                    {{ end }}
+                </section>
+
+                {{ template "experiences" . }}
+
+                {{ template "awards" . }}
+
+                {{ template "open_source_contributions" . }}
+
+                {{ template "educations" . }}
+
+                {{ template "concepts" . }}
+            </div>
+        </main>
+    </body>
+</html>
+{{- end -}}

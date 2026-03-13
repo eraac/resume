@@ -1,0 +1,21 @@
+{{ define "educations" }}
+<section class="mb-8">
+    <h3 class="text-2xl font-extrabold text-slate-800 mb-8 flex items-center gap-2 border-b-2 border-slate-400 pb-2 inline-flex">
+        <i class="fa-solid fa-graduation-cap text-slate-500 text-2xl"></i>
+        Educations
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range .educations }}
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <h4 class="font-bold text-slate-800 text-lg mb-1">{{ .institution }}</h4>
+            <span class="text-sm font-semibold text-slate-500 block mb-2">{{ .period.start }} - {{ .period.end }}</span>
+            <p class="text-slate-700 text-base font-medium">{{ .degree }}</p>
+            {{ range .information }}
+            <p class="text-slate-500 text-sm mt-1">{{ . }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

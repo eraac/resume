@@ -1,0 +1,43 @@
+{
+	"educations": [
+		{
+			"institution": "CFAI INSTA",
+			"degree": "Master’s Degree in Software Architecture",
+			"period": {
+				"start": "October 2016",
+				"end": "July 2018"
+			}
+		},
+		{
+			"institution": "University of Cergy-Pontoise",
+			"degree": "Professional Bachelor’s Degree in Web & Mobile Development (IoT option)",
+			"period": {
+				"start": "September 2015",
+				"end": "September 2016"
+			}
+		},
+		{
+			"institution": "AFORP",
+			"degree": "Associate Degree in IT Services for Organizations (Software Solutions option)",
+			"period": {
+				"start": "September 2013",
+				"end": "July 2015"
+			},
+			"information": [
+				"Equivalent to \"BTS SIO SLAM\""
+			]
+		},
+		{
+			"institution": "AFORP",
+			"degree": "High School Diploma in Systems & Networks",
+			"period": {
+				"start": "September 2010",
+				"end": "July 2013"
+			},
+			"information": [
+				"Equivalent to \"Bac Pro SEN/SN\""
+			]
+		}
+	]
+}
+

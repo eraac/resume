@@ -1,0 +1,80 @@
+{
+	"awards": [
+		{
+			"title": "Archery Federal Judge",
+			"issuer": "FFTA",
+			"date": "January 2025",
+			"description": [
+				"Earned national judge certification, qualifying to officiate archery competitions at the national level",
+				"Required strong knowledge of the rulebook, fast decision making and awareness of the safety measure to ensure smooth, fair and safe competitions for everyone"
+			],
+			"_style": {
+				"color": "bg-emerald-50 text-emerald-600 border-emerald-100",
+				"icon": "fa-solid fa-bullseye"
+			}
+		},
+		{
+			"title": "GCP Professional Cloud Architect",
+			"issuer": "GCP",
+			"date": "January 2022",
+			"description": [
+				"Validated my knowledge on Google Cloud Platform by taking the official exam"
+			],
+			"_style": {
+				"color": "bg-indigo-50 text-indigo-600 border-indigo-100",
+				"icon": "fa-brands fa-google"
+			}
+		},
+		{
+			"title": "Pastry Chef Degree",
+			"issuer": "French Ministry of Education",
+			"date": "July 2020",
+			"description": [
+				"Passed the national exam as independent candidate to become a professional pastry chef after one year of online courses",
+				"Equivalent to \"CAP Pâtissier\""
+			],
+			"_style": {
+				"color": "bg-pink-50 text-pink-500 border-pink-100",
+				"icon": "fa-solid fa-graduation-cap"
+			}
+		},
+		{
+			"title": "Hackathon: Mobility (1st prize)",
+			"issuer": "oui.sncf",
+			"date": "October 2017",
+			"description": [
+				"Developed in three days a proactive agent to notify clients about delay or removal of their trains, and push alternatives to ensure client satisfaction (ex. other routes, reduction to carpooling services)"
+			],
+			"_style": {
+				"color": "bg-amber-50 text-amber-600 border-amber-100",
+				"icon": "fa-solid fa-train"
+			}
+		},
+		{
+			"title": "AWS Solution Architect",
+			"issuer": "AWS",
+			"date": "May 2017",
+			"description": [
+				"Used the certification as a goal to learn and improve my efficiency with the AWS cloud provider"
+			],
+			"_style": {
+				"color": "bg-cyan-50 text-cyan-600 border-cyan-100",
+				"icon": "fa-brands fa-aws"
+			}
+		},
+		{
+			"title": "Hackathon: Women Innovation (1st prize)",
+			"issuer": "WHAT",
+			"date": "October 2015",
+			"description": [
+				"Developed in two days a solution to help women to fight back against sexism in professional environment",
+				"Spent one year as volunteer in “365 raiponce” association as main backend and infrastructure engineer"
+			],
+			"_style": {
+				"color": "bg-purple-50 text-purple-600 border-purple-100",
+				"icon": "fa-solid fa-users"
+			}
+		}
+	]
+}
+

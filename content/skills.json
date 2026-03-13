@@ -1,0 +1,21 @@
+{
+	"skills": [
+		{
+			"name": "Infrastructure",
+			"items": ["GCP", "Terraform", "Kubernetes", "Istio", "Redis/Memcached", "Artifact Registry"] 
+		},
+		{
+			"name": "Observability",
+			"items": ["Grafana", "Open Telemetry", "Prometheus (Cortex)", "Loki", "Alloy"]
+		},
+		{
+			"name": "Development",
+			"items": ["Golang", "Bash", "Apache Beam", "Gitlab CI", "Renovate Bot"]
+		},
+		{
+			"name": "Environment",
+			"items": ["NeoVim", "Tmux"]
+		}
+	]
+}
+

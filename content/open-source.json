@@ -1,0 +1,13 @@
+{
+	"open_source": {
+		"contributions": [
+			{ "organization": "hashicorp", "projects": ["terraform-provider-google", "terraform-provider-aws"] },
+			{ "organization": "grafana", "projects": ["grafana", "loki", "alloy"]},
+			{ "organization": "apache", "projects": ["beam"]},
+			{ "organization": "influxdata", "projects": ["telegraf"]},
+			{ "organization": "googlecontainertools", "projects": ["skaffold"]},
+			{ "organization": "MobilityData", "projects": ["gbfs"]}
+		]
+	}
+}
+
