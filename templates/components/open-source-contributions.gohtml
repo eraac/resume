@@ -13,7 +13,7 @@
                 <h4 class="font-bold text-slate-800 text-lg mb-3">{{ .organization }}/</h4>
                 <div class="flex flex-wrap gap-2 text-sm">
                     {{ range .projects }}
-                    <a target="_blank" href="https://github.com/{{ $org }}/{{ . }}/pulls?q=is%3Apr+author%3AEraac" class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-medium">{{ . }}</a>
+                    <a target="_blank" href="https://github.com/{{ $org }}/{{ . }}/pulls?q=is%3Apr+author%3AEraac" class="bg-slate-100 text-blue-400 px-3 py-1 rounded-full font-medium">{{ . }}</a>
                     {{ end }}
                 </div>
             </div>

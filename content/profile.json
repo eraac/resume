@@ -20,9 +20,9 @@
 		],
 		"interests": ["Archery (competitor)", "Workout", "Pastry"],
 		"summary": [
-			"SRE with a background from operating systems to software engineering. This knowledge allows me to deep-dive into complex technical challenges and communicate effectively across diverse teams.",
-			"I apply a data-driven approach to system optimization and decision-making, while prioritizing documentation to share and consolidate knowledge.",
-			"Active contributor to the Open Source community."
+			"SRE with a background from **operating systems** to **software engineering**. This knowledge allows me to deep-dive into complex technical challenges and **communicate** effectively across diverse teams.",
+			"I apply a **data-driven** approach to system optimization and decision-making, while prioritizing documentation to share and consolidate knowledge.",
+			"Active contributor to the **Open Source** community."
 		]
 	}
 }

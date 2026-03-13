@@ -27,7 +27,7 @@
         <ul class="list-none text-slate-600 text-base leading-relaxed">
             {{ range .description }}
                 <li class="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-emerald-500 before:font-bold">
-                    {{ . }}</li>
+                    {{ . | md_to_html }}</li>
             {{ end }}
         </ul>
     </div>

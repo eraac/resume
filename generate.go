@@ -5,8 +5,13 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"io"
 	"os"
 	"path/filepath"
+
+	"github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown/ast"
+	"github.com/gomarkdown/markdown/html"
 )
 
 const tplName = "index"
@@ -66,6 +71,8 @@ func LoadContent(pattern string) (map[string]any, error) {
 func LoadTemplates(pattern string) (*template.Template, error) {
 	t := template.New(tplName)
 
+	t = AddTemplateFunctions(t)
+
 	templates, err := filepath.Glob(pattern)
 	if err != nil {
 		return nil, fmt.Errorf("failed to load templates: %w", err)
@@ -77,4 +84,29 @@ func LoadTemplates(pattern string) (*template.Template, error) {
 	}
 
 	return t, nil
+}
+
+func AddTemplateFunctions(t *template.Template) *template.Template {
+	r := NewHTLMRenderer()
+
+	return t.Funcs(template.FuncMap{
+		"md_to_html": func(s string) template.HTML {
+			h := markdown.ToHTML([]byte(s), nil, r)
+
+			return template.HTML(h)
+		},
+	})
+}
+
+func NewHTLMRenderer() *html.Renderer {
+	return html.NewRenderer(html.RendererOptions{
+		RenderNodeHook: func(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool) {
+			switch node.(type) {
+			case *ast.Strong, *ast.Emph, *ast.Text: // only render these nodes, skip others
+				return ast.GoToNext, false
+			default:
+				return ast.GoToNext, true
+			}
+		},
+	})
 }

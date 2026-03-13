@@ -29,7 +29,7 @@
             <div class="max-w-5xl mx-auto">
                 <section class="mb-16 space-y-3">
                     {{ range .profile.summary }}
-                        <p class="text-lg text-slate-700 leading-relaxed font-medium">{{ . }}</p>
+                        <p class="text-lg text-slate-700 leading-relaxed font-medium">{{ . | md_to_html }}</p>
                     {{ end }}
                 </section>
 

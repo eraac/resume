@@ -7,14 +7,14 @@
 				"start": "July 2023"
 			},
 			"highlights": [
-				"Architecture and maintenance of the collect, processing and serving infrastructure for the data team on GCP, handling ~22k events/sec in our main entry point. 100% managed via Terraform, solution include a multi-regional GKE with Istio, message queue system (Pub/Sub), distributed streaming pipeline (Dataflow) and datawarehouse (BigQuery)",
-				"Implement and maintain our internal observability infrastructure, with Grafana, Loki, Cortex and Alloy agents, using Open Telemetry protocol to avoid vendor lock-in",
-				"Develop a streaming pipeline to generate telemetry from access logs for each of our customer to compute their SLAs",
-				"Fully rework the VPC, network implementation and IaC code to be future-proof and improve reliability, maintainability and our velocity for new features",
-				"Develop various CLI (golang) for internal usage, including Terraform wrapper with multiple features, markdown-to-confluence sync and infrastructure documentation auto-generation",
-				"Implement easy workflow to generate infrastructure changelog for internal communication", 
-				"Write ADRs to encourage constructive discussions before implementation, and also improve our onboarding process",
-				"Industrialize our process, and offer better autonomy to the feature teams over the infrastructure with Terraform modules, documentations, CI pipelines and safeguards to implement their needs without relying on the infrastructure team"
+				"Architecture and maintenance of the collect, processing and serving infrastructure for the data team on **GCP**, handling **~22k events/sec** in our main entry point. 100% managed via **Terraform**, solution include a **multi-regional GKE** with **Istio**, message queue system (**Pub/Sub**), distributed streaming pipeline (**Dataflow**) and data warehouse (**BigQuery**)",
+				"Implement and maintain our internal observability infrastructure, with **Grafana**, **Loki**, **Cortex** and **Alloy** agents, using **Open Telemetry** protocol to avoid vendor lock-in",
+				"Develop a **streaming pipeline** to generate **telemetry** from access logs for each of our customer to compute their **SLAs**",
+				"Fully rework the **VPC**, **network** implementation and **IaC code** to be future-proof and improve reliability, maintainability and our velocity for new features",
+				"Develop various CLI (**golang**) for internal usage, including Terraform wrapper with multiple features, **markdown-to-confluence** sync and infrastructure **documentation auto-generation**",
+				"Implement easy workflow to generate **infrastructure changelog** for internal communication",
+				"Write **ADRs** to encourage constructive discussions before implementation, and also improve our onboarding process",
+				"Industrialize our process, and offer **better autonomy** to the feature teams over the infrastructure with **Terraform modules**, **documentations**, **CI pipelines** and **safeguards** to implement their needs without relying on the infrastructure team"
 			]
 		},
 		{
@@ -25,10 +25,10 @@
 				"end": "June 2023"
 			},
 			"highlights": [
-				"Took back the control of the AWS infrastructure from our provider (Oxalide)",
-				"Architected and deployed our second generation infrastructure for our collect pipeline (~5k events/sec), using GCP and Terraform",
-				"Implemented Grafana as dashboard and monitoring solution (replacing Datadog)",
-				"Implemented FinOps strategy and best practices to control and reduced our infrastructure cost, resulting in $1+ million cost saving per year"
+				"Took back the control of the **AWS** infrastructure from our provider (Oxalide)",
+				"Architected and deployed our second generation infrastructure for our collect pipeline (**~5k events/sec**), using **GCP** and **Terraform**",
+				"Implemented **Grafana** as dashboard and **monitoring** solution (replacing Datadog)",
+				"Implemented **FinOps strategy** and best practices to control and reduced our infrastructure cost, resulting in **$1+ million** cost saving per year"
 			]
 		},
 		{
@@ -40,8 +40,8 @@
 				"end": "September 2017"
 			},
 			"highlights": [
-				"Developed and maintained the RESTful API with the Symfony framework used by our customers to use our CRO platform",
-				"Popularized best practices and facilitated contributions within the team (OpenAPI, Postman, PHP Unit, Docker)"
+				"Developed and maintained the **RESTful API** with the **Symfony** framework used by our customers to use our CRO platform",
+				"Popularized **best practices** and facilitated contributions within the team (**OpenAPI**, **Postman**, **PHP Unit**, **Docker**)"
 			]
 		},
 		{
@@ -53,7 +53,7 @@
 				"end": "September 2016"
 			},
 			"highlights": [
-				"Developed web applications using standard web frameworks such as Symfony or Zend for our clients"
+				"Developed web applications using standard web frameworks such as **Symfony** or **Zend** for our clients"
 			]
 		},
 		{
@@ -65,7 +65,7 @@
 				"end": "August 2015"
 			},
 			"highlights": [
-				"Developed various kinds of websites and plugins using/for Drupal CMS solution, from basic blog to complex timetracking web app"
+				"Developed various kinds of websites and plugins using/for **Drupal** CMS solution, from basic blog to complex timetracking web app"
 			]
 		},
 		{
@@ -77,7 +77,7 @@
 				"end": "August 2013"
 			},
 			"highlights": [
-				"Installed and maintained reconditioned hardware/software from SUN ecosystem (Unix / Solaris) for our customers. Maintenance included hardware replacement, RAID and zone configuration"
+				"Installed and maintained reconditioned **hardware/software** from SUN ecosystem (**Unix** / **Solaris**) for our customers. Maintenance included hardware replacement, **RAID** and **zone** configuration"
 			]
 		}
 	]
