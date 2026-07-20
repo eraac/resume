@@ -4,7 +4,8 @@
 			"title": "Site Reliability Engineer",
 			"company": "AB Tasty",
 			"period": {
-				"start": "July 2023"
+				"start": "July 2023",
+				"end": "March 2027"
 			},
 			"highlights": [
 				"Architecture and maintenance of the collect, processing and serving infrastructure for the data team on **GCP**, handling **~22k events/sec** in our main entry point. 100% managed via **Terraform**, solution include a **multi-regional GKE** with **Istio**, message queue system (**Pub/Sub**), distributed streaming pipeline (**Dataflow**) and data warehouse (**BigQuery**)",

@@ -91,7 +91,7 @@ build_dist: $(TAILWIND_BIN) tailwind_verify
 DOCKER_IMAGE := eraac/resume:$(shell git describe --always --dirty --tags)
 
 build_docker:
-	@docker build -f production/docker/Dockerfile -t ${DOCKER_IMAGE} .
+	@docker build --platform linux/amd64,linux/arm64 -f production/docker/Dockerfile -t ${DOCKER_IMAGE} .
 
 .PHONY: publish
 publish:
