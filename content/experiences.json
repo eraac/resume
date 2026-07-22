@@ -1,6 +1,21 @@
 {
 	"experiences": [
 		{
+			"title": "Cloud Architect / SRE",
+			"company": "Your Company",
+			"period": {
+				"start": "April 2027",
+				"end": "?"
+			},
+			"highlights": [
+				"You run your infrastructure on **GCP** or **On-Prem**.",
+				"You need to build, scale, or optimize a robust **LGTM** observability stack.",
+				"Your priority goals are **High Availability**, **Scalability**, and seamless **Observability**.",
+				"You value **DevEx** (Developer Experience), **FinOps**, and **Open Source** culture.",
+				"**Match**? Reach out and let's talk about how I can help!"
+			]
+		},
+		{
 			"title": "Site Reliability Engineer",
 			"company": "AB Tasty",
 			"period": {
@@ -9,13 +24,14 @@
 			},
 			"highlights": [
 				"Architecture and maintenance of the collect, processing and serving infrastructure for the data team on **GCP**, handling **~22k events/sec** in our main entry point. 100% managed via **Terraform**, solution include a **multi-regional GKE** with **Istio**, message queue system (**Pub/Sub**), distributed streaming pipeline (**Dataflow**) and data warehouse (**BigQuery**)",
+				"Harden our **GCP** security posture by enforcing **Organization Policies**, strict **firewall rules**, the **principle of least privilege**, and robust **IaC workflows** with mandatory approvals",
 				"Implement and maintain our internal observability infrastructure, with **Grafana**, **Loki**, **Cortex** and **Alloy** agents, using **Open Telemetry** protocol to avoid vendor lock-in",
-				"Develop a **streaming pipeline** to generate **telemetry** from access logs for each of our customer to compute their **SLAs**",
 				"Fully rework the **VPC**, **network** implementation and **IaC code** to be future-proof and improve reliability, maintainability and our velocity for new features",
 				"Develop various CLI (**golang**) for internal usage, including Terraform wrapper with multiple features, **markdown-to-confluence** sync and infrastructure **documentation auto-generation**",
 				"Implement easy workflow to generate **infrastructure changelog** for internal communication",
 				"Write **ADRs** to encourage constructive discussions before implementation, and also improve our onboarding process",
-				"Industrialize our process, and offer **better autonomy** to the feature teams over the infrastructure with **Terraform modules**, **documentations**, **CI pipelines** and **safeguards** to implement their needs without relying on the infrastructure team"
+				"Industrialize our process, and offer **better autonomy** to the feature teams over the infrastructure with **Terraform modules**, **documentations**, **CI pipelines** and **safeguards** to implement their needs without relying on the infrastructure team",
+				"Develop a **streaming pipeline** to generate **telemetry** from access logs for each of our customer to compute their **SLAs**"
 			]
 		},
 		{

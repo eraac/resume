@@ -2,15 +2,21 @@
 	"skills": [
 		{
 			"name": "Infrastructure",
-			"items": ["GCP", "Terraform", "Kubernetes", "Istio", "Redis/Memcached", "Artifact Registry"] 
+			"items": ["GCP", "Terraform", "Kubernetes", "Istio", "Redis/Memcached", "Ansible"]
+		},
+		{
+			"name": "Google Cloud Platform",
+			"items": [
+				"GKE", "Pub/Sub", "Cloud Storage", "VPC", "Artifact Registry", "CloudSQL", "Cloud DNS", "Global Load Balancer", "KMS", "BigQuery", "BigTable", "Cloud Armor", "Memorystore", "Asset Inventory", "Cloud Run", "Secrets Manager", "Cloud Scheduler", "Workflows", "Org Policy"
+			]
 		},
 		{
 			"name": "Observability",
-			"items": ["Grafana", "Open Telemetry", "Prometheus (Cortex)", "Loki", "Alloy"]
+			"items": ["Grafana", "Open Telemetry", "Prometheus (Cortex)", "Loki", "Alloy", "kube-state-metrics"]
 		},
 		{
 			"name": "Development",
-			"items": ["Golang", "Bash", "Apache Beam", "Gitlab CI", "Renovate Bot"]
+			"items": ["Golang", "Bash", "Gitlab CI", "Renovate Bot"]
 		},
 		{
 			"name": "Environment",

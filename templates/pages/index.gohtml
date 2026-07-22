@@ -27,7 +27,7 @@
 
         <main class="w-full md:w-[70%] lg:w-[75%] xl:w-[78%] p-4 md:p-8 lg:p-12 relative overflow-hidden">
             <div class="max-w-5xl mx-auto">
-                <section class="mb-16 space-y-3">
+                <section class="mb-8 space-y-3">
                     {{ range .profile.summary }}
                         <p class="text-lg text-slate-700 leading-relaxed font-medium">{{ . | md_to_html }}</p>
                     {{ end }}
